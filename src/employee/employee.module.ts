@@ -7,7 +7,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { PromotedEmployeeComponent } from './promoted-employee/promoted-employee.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
-
+import { RouterModule } from '@angular/router';
+import { SharedModule } from 'src/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
   ],
   imports: [
     CommonModule,
-    EmployeeRoutingModule
+    EmployeeRoutingModule,
+    RouterModule,
+    SharedModule
   ]
 })
 export class EmployeeModule { }

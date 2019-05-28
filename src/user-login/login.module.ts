@@ -6,6 +6,7 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from 'src/shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     LoginRoutingModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class LoginModule { }

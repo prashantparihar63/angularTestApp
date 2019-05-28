@@ -4,10 +4,11 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { PromotedEmployeeComponent } from './promoted-employee/promoted-employee.component';
+import { HomeComponent } from 'src/shared/home/home.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: EmployeeListComponent
   },
   {
@@ -15,17 +16,27 @@ const routes: Routes = [
     component: AddEmployeeComponent
   },
   {
-    path:'update',
+    path: 'update',
     component: UpdateEmployeeComponent
   },
   {
-    path:'promoted',
+    path: 'promoted',
     component: PromotedEmployeeComponent
   }
+  ,
+  {
+    path: 'home',
+    component: HomeComponent
+  }
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forChild(routes)
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class EmployeeRoutingModule { }

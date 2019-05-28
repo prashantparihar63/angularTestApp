@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { EmployeeModule } from './employee/employee.module';
 import { LoginModule } from './user-login/login.module';
+import { SharedModule } from './shared/shared.module';
 
 const routes: Routes = [
   {
@@ -17,6 +18,11 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => LoginModule
+  }
+  ,
+  {
+    path: 'shared',
+    loadChildren: () => SharedModule
   }
 ]
 

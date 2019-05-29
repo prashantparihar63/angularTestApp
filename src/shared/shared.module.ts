@@ -6,13 +6,15 @@ import { HoverDirective } from './directive/hover.directive';
 import { UppercasePipe } from './pipe/uppercase.pipe';
 import { DateFormatterService } from './services/date-formatter.service';
 import { RouterModule } from '@angular/router';
+import { DatetransformPipe } from './pipe/datetransform.pipe';
 
 @NgModule({
   declarations: [
     HomeComponent,
     DatepickerComponent,
     HoverDirective,
-    UppercasePipe
+    UppercasePipe,
+    DatetransformPipe
   ],
   imports: [
     CommonModule,

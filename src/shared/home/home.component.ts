@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  testVariable: string;
+  constructor() {
+    this.testVariable = "hi this is test value and a example of camel case.";
+  }
 
   ngOnInit() {
   }

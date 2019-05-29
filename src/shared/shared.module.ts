@@ -20,7 +20,8 @@ import { RouterModule } from '@angular/router';
   ],
   exports:[
     HomeComponent,
-    HoverDirective
+    HoverDirective,
+    UppercasePipe
   ]
 })
 export class SharedModule {

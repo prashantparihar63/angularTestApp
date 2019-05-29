@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddEmployeeComponent implements OnInit {
 
-  constructor() { }
+  valueToTransform: string;
+  constructor() {
+    this.valueToTransform = "hi this string is transformed using custom pipe."
+  }
 
   ngOnInit() {
+
   }
 
 }
